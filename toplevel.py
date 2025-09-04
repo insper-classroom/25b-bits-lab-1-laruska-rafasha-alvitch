@@ -10,9 +10,9 @@ def toplevel(LEDR, SW, HEX0, HEX1):
     ledr_s = [Signal(bool(0)) for i in range(10)]
 
     # Instatiations
-    ic1 = exe4(ledr_s, SW)
-    # ic2 = exe5(ledr_s, SW)
-    # ic2 = sw2hex(HEX0, SW)
+    # ic1 = exe4(ledr_s, SW)
+    ic2 = exe5(ledr_s, SW)
+    ic2 = sw2hex(HEX0, SW)
     # ic3 = bin2hex(HEX1, SW)
 
     @always_comb
